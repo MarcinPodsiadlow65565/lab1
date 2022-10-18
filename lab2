@@ -1,0 +1,103 @@
+
+import java.util.Random;
+import java.util.Scanner;
+
+
+
+public class Main {
+    public static void main(String[] args) {
+        zadanie3();
+
+    }
+
+    //zadanie 1
+    public static void zadanie1() {
+        int n, a = 0, b = 10;
+        double suma = 0, pkt, ile = 0;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Podaj ilosc studentów");
+        n = input.nextInt();
+        if (n > 0) {
+            while (n > 0) {
+                System.out.println("Podaj ilosc pkt: 0 - 10");
+
+                pkt = input.nextDouble();
+
+                if (pkt >= a && pkt <= b) {
+                    suma += pkt;
+                    ile++;
+                    n--;
+                }
+            }//koniec while
+            System.out.println("ile" + ile);
+            System.out.println("suma pkt" + suma);
+            System.out.println("srednia: " + (suma / ile));
+        } else {
+            System.out.println("Ilosc studentow musi byc liczba > 0");
+        }
+    }
+
+    //zadanie 2
+    public static double Input() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("podaj liczbe:");
+        double n = input.nextDouble();
+        return n;
+    }
+
+    public static void zadanie2() {
+        int ile_d = 0, ile_U = 0;
+        double sumaD = 0, sumaU = 0, liczb;
+        for (int i = 0; i < 10; i++) {
+            liczb = Input();
+            if (liczb >= 0) {
+                ile_d++;
+                sumaD += liczb;
+
+            } else {
+                ile_U++;
+                sumaU += liczb;
+            }
+        }//koniec for
+        System.out.println("ilosc liczb dodatnich: " + ile_d + ", suma = " + sumaD);
+        System.out.println("ilosc liczb ujemnych: " + ile_U + ", suma = " + sumaU);
+    }
+
+    //zadanie 3
+    public static double Input() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("podaj liczbe:");
+        double n = input.nextDouble();
+        return n;
+    }
+
+    public static void zadanie3() {
+        int ile_p = 0, liczb;
+        double sumaP = 0;
+        for (int i = 0; i < 10; i++) {
+            if (n % 2 == 0)
+                ile_p++;
+            sumaP += liczb;
+
+        }
+    }
+
+        public static void main(String[] args) {
+
+            int ile_liczb, min=-10,max=45;
+            System.out.println(("podaj liczbe: "));
+            Scanner input4 = new Scanner (System.in);
+            ile_liczb = input4.nextInt();
+            for (int i = 0; i < ile_liczb; i++){
+                a = rand.nextInt(y-x+1)+x;
+                if(a%2 == 0){
+                    ile_p++;sumaP+=liczb;
+                }
+                System.out.println("ilosc liczb parzystych: " + ile_p + ", suma = " + sumaP);
+            }
+        }
+
+
+}
+
+
